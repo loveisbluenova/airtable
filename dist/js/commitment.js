@@ -17,6 +17,7 @@ $('#mysearchbutton').click(function(){
     base('commitments').select({
         
          filterByFormula: 'FIND("' + search_string + '", description) > 0',
+      
         
     }).eachPage(function page(records, fetchNextPage) {
         records.forEach(function(record) {
