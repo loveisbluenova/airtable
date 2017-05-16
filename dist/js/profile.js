@@ -12,12 +12,12 @@ $('#mysearchbutton').click(function(){
 
     flag_for_request = 1;
     search_string = $('#myInput').val();
-    alert(search_string);
+    //alert(search_string);
     $('#tblData').html('');
     base('projects').select({
         
-         //filterByFormula: 'FIND("' + search_string + '", projectid) > 0',
-         filterByFormula :"OR( RECORD_ID() = 'recXXXXXX', RECORD_ID() = 'recXXXXXX')",
+         filterByFormula: 'FIND("' + search_string + '", projectid) > 0',
+         //filterByFormula :"OR( RECORD_ID() = 'recXXXXXX', RECORD_ID() = 'recXXXXXX')",
         
 
     }).eachPage(function page(records, fetchNextPage) {
