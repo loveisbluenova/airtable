@@ -66,10 +66,10 @@ var loadArtists = function() {
             var $row = $('<tr>');
 
             $row.append($('<td onclick="tdClick(this)">').text(record.get('projectid')));
-            $row.append($('<td onclick="tdClick(this)">').text(record.get('managingagency')));
-            $row.append($('<td onclick="tdClick(this)">').text(record.get('description')));
-            $row.append($('<td onclick="tdClick(this)">').text(record.get('commitments')));
-            $row.append($('<td onclick="tdClick(this)">').text('$' + record.get('totalcost')));
+            $row.append($('<td>').text(record.get('managingagency')));
+            $row.append($('<td>').text(record.get('description')));
+            $row.append($('<td>').text(record.get('commitments')));
+            $row.append($('<td>').text('$' + record.get('totalcost')));
 
             $row.attr('data-record-id', record.getId());
 
