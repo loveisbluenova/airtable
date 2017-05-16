@@ -297,4 +297,9 @@ select.selectpicker {
   width: 100%;
   float: none;
 }
+td {
+    width: 100px;
+    word-spacing: initial;
+    word-break: break-all;
+}
 /*# sourceMappingURL=bootstrap-select.css.map */
